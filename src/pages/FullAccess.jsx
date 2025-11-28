@@ -11,7 +11,7 @@ export default function FullAccess() {
     const [accounts, setAccounts] = useState([])
 
     useEffect(() => {
-        fetch('/public/fa-account.json')
+        fetch('/fa-account.json')
             .then((response) => response.json())
             .then((data) => setAccounts(data))
     }, [])

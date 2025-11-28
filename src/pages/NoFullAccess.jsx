@@ -11,7 +11,7 @@ export default function NoFullAccess() {
     const [accounts, setAccounts] = useState([])
 
     useEffect(() => {
-        fetch('/public/nfa-account.json')
+        fetch('/nfa-account.json')
             .then((response) => response.json())
             .then((data) => setAccounts(data))
     }, [])
