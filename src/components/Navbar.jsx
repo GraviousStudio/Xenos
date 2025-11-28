@@ -10,7 +10,9 @@ export default function Navbar() {
     return (
         <>
             <div className="flex justify-center">
-                <img src={'/xenos-logo.png'} alt="" width={120} />
+                <Link to={'/'}>
+                    <img src={'/xenos-logo.png'} alt="" width={120} className="cursor-pointer" />
+                </Link>
             </div>
             <nav className="xl:flex xl:justify-center bg-zinc-900">
                 <div className="flex bg-zinc-900 text-white h-12 p-3 xl:hidden justify-between border border-solid border-zinc-800">
