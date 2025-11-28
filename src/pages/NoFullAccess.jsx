@@ -11,7 +11,7 @@ export default function NoFullAccess() {
     const [accounts, setAccounts] = useState([])
 
     useEffect(() => {
-        fetch('https://mocki.io/v1/d948eb17-b5d6-4984-97b4-d80126c22312')
+        fetch('/public/nfa-account.json')
             .then((response) => response.json())
             .then((data) => setAccounts(data))
     }, [])
