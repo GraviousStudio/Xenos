@@ -10,7 +10,7 @@ function FaProduct() {
     const {cardID} = useParams();
 
     useEffect(() => {
-            fetch('/fa-account.json')
+            fetch('/public/fa-account.json')
                 .then((response) => response.json())
                 .then((data) => setAccounts(data))
         }, [])

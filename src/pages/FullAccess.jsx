@@ -26,7 +26,6 @@ export default function FullAccess() {
                 <h1 className="text-white text-2xl font-semibold flex justify-center mb-6 mt-3">Full Access</h1>
                 <CardContainer>
                     {accounts.map(account => (
-                        <Link to={`https://t.me/Xenos`} >
                             <Card
                                 key={account.id}
                                 img={account.img}
@@ -34,7 +33,6 @@ export default function FullAccess() {
                                 desc={account.desc}
                                 price={account.price}>
                             </Card>
-                        </Link>
                     ))}
                 </CardContainer>
             </div>

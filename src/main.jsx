@@ -27,14 +27,14 @@ const router = createBrowserRouter(
       path: '/contact',
       Component: Contact
     },
-    {
-      path: '/fa-product/:cardID',
-      Component: FaProduct
-    },
-    {
-      path: '/nfa-product/:cardID',
-      Component: NoFaProduct
-    },
+    // {
+    //   path: '/fa-product/:cardID',
+    //   Component: FaProduct
+    // },
+    // {
+    //   path: '/nfa-product/:cardID',
+    //   Component: NoFaProduct
+    // },
   ]);
 
 createRoot(document.getElementById('root')).render(
