@@ -11,7 +11,7 @@ export default function FullAccess() {
     const [accounts, setAccounts] = useState([])
 
     useEffect(() => {
-        fetch('/public/fa-account.json')
+        fetch('https://mocki.io/v1/d948eb17-b5d6-4984-97b4-d80126c22312')
             .then((response) => response.json())
             .then((data) => setAccounts(data))
     }, [])
