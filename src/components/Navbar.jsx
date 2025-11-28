@@ -10,7 +10,7 @@ export default function Navbar() {
     return (
         <>
             <div className="flex justify-center">
-                <img src={'../../public/xenos-logo.png'} alt="" width={120} />
+                <img src={'/xenos-logo.png'} alt="" width={120} />
             </div>
             <nav className="xl:flex xl:justify-center bg-zinc-900">
                 <div className="flex bg-zinc-900 text-white h-12 p-3 xl:hidden justify-between border border-solid border-zinc-800">
