@@ -1,0 +1,107 @@
+[
+  {
+    "id": 0,
+    "title": "mystery box",
+    "desc": "",
+    "img": "https://i.postimg.cc/RhZcGckP/1.png",
+    "price": "€20"
+  },
+  {
+    "id": 1,
+    "title": "1+ Skin",
+    "desc": "",
+    "img": "https://i.postimg.cc/d3V8n8bp/2.png",
+    "price": "€5"
+  },
+  {
+    "id": 2,
+    "title": "10+ Skin",
+    "desc": "",
+    "img": "https://i.postimg.cc/1X3pMGx1/3.png",
+    "price": "€10"
+  },
+  {
+    "id": 3,
+    "title": "Leviathan Axe",
+    "desc": "",
+    "img": "https://i.postimg.cc/3Nxg9XMM/4.png",
+    "price": "€40"
+  },
+  {
+    "id": 4,
+    "title": "Minty Axe",
+    "desc": "",
+    "img": "https://i.postimg.cc/rswSgSB7/5.png",
+    "price": "€40"
+  },
+  {
+    "id": 5,
+    "title": "Mako",
+    "desc": "",
+    "img": "https://i.postimg.cc/FzHjGyt4/6.png",
+    "price": "€40"
+  },
+  {
+    "id": 6,
+    "title": "Glow",
+    "desc": "",
+    "img": "https://i.postimg.cc/7hZgX3vw/7.png",
+    "price": "€40"
+  },
+  {
+    "id": 7,
+    "title": "Season 2",
+    "desc": "",
+    "img": "https://i.postimg.cc/1X7Dd8ST/8.png",
+    "price": "€50"
+  },
+  {
+    "id": 8,
+    "title": "Season 3",
+    "desc": "",
+    "img": "https://i.postimg.cc/5y2wpBcf/9.png",
+    "price": "€50"
+  },
+  {
+    "id": 9,
+    "title": "Season 4",
+    "desc": "",
+    "img": "https://i.postimg.cc/mkp7nP4K/10.png",
+    "price": "€40"
+  },
+  {
+    "id": 10,
+    "title": "Travis Scott",
+    "desc": "",
+    "img": "https://i.postimg.cc/kGYWH2Ck/11.png",
+    "price": "€100"
+  },
+  {
+    "id": 11,
+    "title": "Ikonik or Galaxy",
+    "desc": "",
+    "img": "https://i.postimg.cc/MH31Lnxk/12.png",
+    "price": "€100"
+  },
+  {
+    "id": 12,
+    "title": "Personalizzato",
+    "desc": "",
+    "img": "https://i.postimg.cc/tJvFcsyH/13.png",
+    "price": "su richiesta"
+  },
+  {
+    "id": 13,
+    "title": "Black Knight",
+    "desc": "",
+    "img": "https://i.postimg.cc/90gykDVh/14.png",
+    "price": "€200"
+  },
+  {
+    "id": 14,
+    "title": "OG Skin",
+    "desc": "",
+    "img": "https://i.postimg.cc/7htSR5DD/15.png",
+    "price": "su richiesta"
+  }
+]
