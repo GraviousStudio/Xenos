@@ -6,6 +6,7 @@ export default function GoCatalogue() {
 
     return (
         <>
+            <br /><hr /><br />
             <div className="flex flex-col md:flex-row p-3 m-3 gap-10 lg:items-center">
                 <div className="lg:w-1/2 m-3 p-3">
                     <h1 className="text-white text-3xl font-semibold">Sei in cerca di un account!?</h1>
@@ -14,10 +15,10 @@ export default function GoCatalogue() {
                     <Link to={'/full-access'}><button className="text-white p-3 px-6 mt-6 bg-blue-600 rounded-2xl cursor-pointer"><i className="fa-solid fa-angle-right bg-zinc-400/80 rounded-2xl px-1 py-0.5"></i> CATALOGO</button></Link>
                 </div>
                 <div className="bg-zinc-900 w-full lg:w-1/2 rounded-3xl transition-all ease-in-out duration-300 hover:shadow-2xl hover:shadow-violet-800">
-                    <img src={'https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/8BB6/production/_103466753_fort.jpg'} alt="" className="w-full h-full rounded-3xl object-center object-cover"/>
+                    <img src={'https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/8BB6/production/_103466753_fort.jpg'} alt="" className="w-full h-full rounded-3xl object-center object-cover" />
                 </div>
             </div>
-        <br /><hr /><br />
+            <br /><hr /><br />
         </>
     )
 }
