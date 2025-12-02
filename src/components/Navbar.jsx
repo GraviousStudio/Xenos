@@ -31,10 +31,11 @@ export default function Navbar() {
                 </div>
 
                 <div className={`text-xl text-white font-semibold ${(burger ? "flex flex-col" : "hidden")} xl:flex xl:flex-row transition-all ease-in-out duration-300`} id="nav-link">
-                    <Link to={'/'} className="bg-zinc-900 p-3 cursor-pointer hover:text-violet-900 transition-all ease-in-out duration-300">Home</Link>
-                    <Link to={'/full-access'} className="bg-zinc-900 p-3 cursor-pointer hover:text-violet-900 transition-all ease-in-out duration-300">Full Access</Link>
-                    <Link to={'/no-full-access'} className="bg-zinc-900 p-3 cursor-pointer hover:text-violet-900 transition-all ease-in-out duration-300">No Full Access</Link>
-                    <Link to={'/contact'} className="bg-zinc-900 p-3 cursor-pointer hover:text-violet-900 transition-all ease-in-out duration-300">Contattaci</Link>
+                    <Link to={'/'} className="bg-zinc-900 p-3 cursor-pointer hover:text-violet-900 transition-all ease-in-out duration-300"><i className="fa-solid fa-house"></i> Home</Link>
+                    <Link to={'/full-access'} className="bg-zinc-900 p-3 cursor-pointer hover:text-violet-900 transition-all ease-in-out duration-300"><i className="fa-solid fa-person"></i> Full Access</Link>
+                    <Link to={'/no-full-access'} className="bg-zinc-900 p-3 cursor-pointer hover:text-violet-900 transition-all ease-in-out duration-300"><i className="fa-solid fa-person"></i> No Full Access</Link>
+                    <Link to={'/cart'} className="bg-zinc-900 p-3 cursor-pointer hover:text-violet-900 transition-all ease-in-out duration-300"><i class="fa-solid fa-basket-shopping"></i> Carrello</Link>
+                    <Link to={'/contact'} className="bg-zinc-900 p-3 cursor-pointer hover:text-violet-900 transition-all ease-in-out duration-300"><i className="fa-solid fa-message"></i> Contattaci</Link>
                 </div>
             </nav>
         </>

@@ -4,19 +4,31 @@ import Navbar from "../components/Navbar";
 import CardContainer from "../components/subComponents/CardContainer";
 import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../redux/cartSlice";
 // import { useSelector } from "react-redux";
 
 export default function NoFullAccess() {
 
-    const [accounts, setAccounts] = useState([])
+    // const [accounts, setAccounts] = useState([])
 
-    useEffect(() => {
-        fetch('/nfa-account.json')
-            .then((response) => response.json())
-            .then((data) => setAccounts(data))
-    }, [])
+    // useEffect(() => {
+    //     fetch('/nfa-account.json')
+    //         .then((response) => response.json())
+    //         .then((data) => setAccounts(data))
+    // }, [])
 
-    // const accounts = useSelector((state) => state.value)
+    const dispatch = useDispatch()
+
+    const accounts = useSelector((state => state.nfaAccountReducer))
+
+    const filterAccount = (accountID) => {
+        return accounts.filter((acc) => (acc.id == accountID))
+    }
+
+    const handlePurchase = (filteredAccount) => {
+        dispatch(addToCart(filteredAccount[0]))
+    }
 
     return (
         <>
@@ -31,7 +43,10 @@ export default function NoFullAccess() {
                             img={account.img}
                             title={account.title}
                             desc={account.desc}
-                            price={account.price}>
+                            value={account.value}
+                            price={account.price}
+                            handlePurchase={() => handlePurchase(filterAccount(account.id))}
+                        >
                         </Card>
                     ))}
                 </CardContainer>

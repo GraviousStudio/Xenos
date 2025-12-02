@@ -6,8 +6,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import FullAccess from './pages/FullAccess.jsx'
 import NoFullAccess from './pages/NoFullAccess.jsx'
 import Contact from './pages/Contact.jsx'
-import FaProduct from './pages/FaProduct.jsx'
-import NoFaProduct from './pages/NoFaProduct.jsx'
+import Cart from './pages/Cart.jsx'
+import { Provider } from 'react-redux'
+import store from './redux/store.js'
 
 const router = createBrowserRouter(
   [
@@ -27,18 +28,16 @@ const router = createBrowserRouter(
       path: '/contact',
       Component: Contact
     },
-    // {
-    //   path: '/fa-product/:cardID',
-    //   Component: FaProduct
-    // },
-    // {
-    //   path: '/nfa-product/:cardID',
-    //   Component: NoFaProduct
-    // },
+    {
+      path: '/cart',
+      Component: Cart
+    },
   ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Provider store={store}>
       <RouterProvider router={router} />
+    </Provider>
   </StrictMode >,
 )
