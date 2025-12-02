@@ -19,7 +19,7 @@ export default function Card({ title, desc, img, price, value, handlePurchase })
                     </div>
                     <div className="flex justify-center m-3">
                         {/* <img src={'https://www.pngitem.com/pimgs/m/47-479964_accepted-payment-types-payment-types-hd-png-download.png'} className="rounded-4xl border-2 border-violet-900" alt="" width={200} /> */}
-                        <button onClick={handlePurchase} className="text-white text-2xl bg-indigo-600 font-semibold px-6 py-1 m-3 rounded-lg cursor-pointer">Acquista</button>
+                        <button onClick={handlePurchase} className="text-white text-lg bg-indigo-600 font-semibold px-6 py-1 m-3 rounded-lg cursor-pointer">Aggiungi Al Carrello</button>
                     </div>
                 </div>
         </>
